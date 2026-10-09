@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "COMPATIBLE_SCREEN_MANIFEST",
+    "kind": "Directory"
+  },
+  "applicationId": "com.gujarati.culture.app3_asmita_digital_library",
+  "variantName": "debug",
+  "elements": []
+}
