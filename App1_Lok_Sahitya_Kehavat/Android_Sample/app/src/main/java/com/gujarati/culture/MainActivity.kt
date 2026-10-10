@@ -1,5 +1,40 @@
 package com.gujarati.culture
 
+import android.content.Context
+import android.media.MediaPlayer
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,12 +46,8 @@ import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontStyle
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,69 +108,120 @@ fun KehavatScreen() {
     }
 }
 
-val sampleFlashcards = listOf(
-    Pair("ટીપે ટીપે સરોવર ભરાય", "Drop by drop, a lake is filled. (Small efforts add up)"),
-    Pair("લોભે લક્ષણ જાય", "Greed destroys good qualities."),
-    Pair("ખાડો ખોદે તે પડે", "He who digs a pit for others falls into it himself.")
-)
+
+
+class FlashcardViewModel : ViewModel() {
+    var words by mutableStateOf<List<GujaratiWord>>(emptyList())
+    var isLoading by mutableStateOf(true)
+
+    fun fetchWords(context: Context) {
+        isLoading = true
+        try {
+            DictionaryManager.init(context)
+            words = DictionaryManager.getRandomWords(10)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        } finally {
+            isLoading = false
+        }
+    }
+
+    fun playAudio(context: Context, wordId: String) {
+        try {
+            val mediaPlayer = MediaPlayer()
+            val afd = context.assets.openFd("audio/words/$wordId.mp3")
+            mediaPlayer.setDataSource(afd.fileDescriptor, afd.startOffset, afd.length)
+            mediaPlayer.prepare()
+            mediaPlayer.start()
+            mediaPlayer.setOnCompletionListener {
+                it.release()
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+}
 
 @Composable
-fun FlashcardScreen() {
+fun FlashcardScreen(viewModel: FlashcardViewModel = viewModel()) {
+    val context = LocalContext.current
     var currentIndex by remember { mutableStateOf(0) }
     var isFlipped by remember { mutableStateOf(false) }
+
+    LaunchedEffect(Unit) {
+        if (viewModel.words.isEmpty()) {
+            viewModel.fetchWords(context)
+        }
+    }
 
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text("Flashcards: Learn Kehavato", fontSize = 24.sp, modifier = Modifier.padding(bottom = 24.dp))
+        Text("Flashcards: Learn Vocabulary", fontSize = 24.sp, modifier = Modifier.padding(bottom = 24.dp))
         
-        Card(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(250.dp)
-                .clickable { isFlipped = !isFlipped },
-            elevation = CardDefaults.cardElevation(8.dp)
-        ) {
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                if (!isFlipped) {
-                    Text(
-                        text = "${sampleFlashcards[currentIndex].first}\n\n(Tap to flip)",
-                        textAlign = TextAlign.Center, 
-                        fontSize = 24.sp,
-                        modifier = Modifier.padding(16.dp)
-                    )
-                } else {
-                    Text(
-                        text = "${sampleFlashcards[currentIndex].second}\n\n(Tap to flip)",
-                        textAlign = TextAlign.Center, 
-                        fontSize = 20.sp,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.padding(16.dp)
-                    )
+        if (viewModel.isLoading) {
+            CircularProgressIndicator()
+        } else if (viewModel.words.isEmpty()) {
+            Text("Failed to load words.")
+            Button(onClick = { viewModel.fetchWords(context) }, modifier = Modifier.padding(top = 16.dp)) {
+                Text("Retry")
+            }
+        } else {
+            val currentWord = viewModel.words[currentIndex]
+            
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(300.dp)
+                    .clickable { isFlipped = !isFlipped },
+                elevation = CardDefaults.cardElevation(8.dp)
+            ) {
+                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    if (!isFlipped) {
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(16.dp)) {
+                            Text(text = currentWord.word, fontSize = 36.sp, color = MaterialTheme.colorScheme.primary)
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(text = "(Tap to flip)", fontSize = 16.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            
+                            Spacer(modifier = Modifier.height(16.dp))
+                            IconButton(onClick = { viewModel.playAudio(context, currentWord.id) }) {
+                                Icon(Icons.Default.PlayArrow, contentDescription = "Play Pronunciation")
+                            }
+                        }
+                    } else {
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(16.dp)) {
+                            val definition = currentWord.definitions.firstOrNull()?.definition ?: "No definition"
+                            Text(text = "${currentWord.romanization} (${currentWord.ipa})", fontStyle = FontStyle.Italic, fontSize = 18.sp)
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(text = definition, textAlign = TextAlign.Center, fontSize = 20.sp)
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(text = "(Tap to flip)", fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                    }
                 }
             }
-        }
-        
-        Spacer(modifier = Modifier.height(32.dp))
-        
-        Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-            OutlinedButton(
-                onClick = { 
-                    if (currentIndex > 0) currentIndex--
-                    isFlipped = false 
-                },
-                enabled = currentIndex > 0
-            ) { Text("Previous") }
             
-            Button(
-                onClick = { 
-                    if (currentIndex < sampleFlashcards.size - 1) currentIndex++ 
-                    isFlipped = false
-                },
-                enabled = currentIndex < sampleFlashcards.size - 1
-            ) { Text("Next") }
+            Spacer(modifier = Modifier.height(32.dp))
+            
+            Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                OutlinedButton(
+                    onClick = { 
+                        if (currentIndex > 0) currentIndex--
+                        isFlipped = false 
+                    },
+                    enabled = currentIndex > 0
+                ) { Text("Previous") }
+                
+                Button(
+                    onClick = { 
+                        if (currentIndex < viewModel.words.size - 1) currentIndex++ 
+                        isFlipped = false
+                    },
+                    enabled = currentIndex < viewModel.words.size - 1
+                ) { Text("Next") }
+            }
         }
     }
 }
