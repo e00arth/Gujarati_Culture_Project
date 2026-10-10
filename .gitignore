@@ -25,3 +25,4 @@ gradle-*/
 *.jar
 *.zip
 git_access.txt
+**/app/build/
