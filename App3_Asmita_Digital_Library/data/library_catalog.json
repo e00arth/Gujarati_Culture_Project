@@ -1,0 +1,106 @@
+[
+  {
+    "id": "bk-1",
+    "titleGu": "ગુજરાતી કહેવતો અને લોકવિદ્યા",
+    "titleEn": "Book 1: Gujarati Kehavato & Folklore Origins",
+    "author": "Cultural Heritage Series",
+    "summary": "1,400+ traditional proverbs, multi-tier philosophical meanings, and historical folklore fables.",
+    "chaptersCount": 20,
+    "isSampleFree": true,
+    "tableOfContents": [
+      "પ્રકરણ ૧: ધીરજ, પરિશ્રમ અને પ્રકૃતિની શીખ",
+      "પ્રકરણ ૨: વાણીનો વિવેક અને વ્યવહાર બુદ્ધિ",
+      "પ્રકરણ ૩: પરિવાર, સંબંધો અને સામાજિક મૂલ્યો",
+      "પ્રકરણ ૪: સંતોષ અને લોભની સીમાઓ",
+      "પ્રકરણ ૫: ભાગ્ય અને પુરુષાર્થનું સંતુલન"
+    ]
+  },
+  {
+    "id": "bk-2",
+    "titleGu": "લોકસાહિત્યની સુવાસ",
+    "titleEn": "Book 2: Fragrance of Lok Sahitya",
+    "author": "ઝવેરચંદ મેઘાણી અને લોકપરંપરા",
+    "summary": "Anthology of oral folklore, Halarda lullabies, Dayro couplets, and Saurashtra legends.",
+    "chaptersCount": 15,
+    "isSampleFree": false,
+    "tableOfContents": [
+      "પ્રકરણ ૧: હાલરડાં: માતૃત્વનો અમૃત કુંભ",
+      "પ્રકરણ ૨: દાયરો અને દુહા-છંદની પરંપરા",
+      "પ્રકરણ ૩: બહારવટિયાઓની શૌર્યગાથાઓ",
+      "પ્રકરણ ૪: કસુંબીનો રંગ અને રાષ્ટ્રીય ચેતના"
+    ]
+  },
+  {
+    "id": "bk-3",
+    "titleGu": "ગુજરાતનો આધ્યાત્મિક વારસો",
+    "titleEn": "Book 3: Spiritual Heritage of Gujarat",
+    "author": "આધ્યાત્મિક સંશોધન મંડળ",
+    "summary": "Chronicles of Somnath, Dwarka, Palitana, Girnar, and the lives of Narsinh Mehta and Shrimad Rajchandra.",
+    "chaptersCount": 18,
+    "isSampleFree": false,
+    "tableOfContents": [
+      "પ્રકરણ ૧: સોમનાથ: ચિરંજીવી શ્રદ્ધાનું પ્રતીક",
+      "પ્રકરણ ૨: દ્વારકા: મુક્તિનું દ્વાર અને શ્રીકૃષ્ણ લીલા",
+      "પ્રકરણ ૩: પાલીતાણા અને ગિરનાર: જૈન તીર્થંકરોનું તપોવન",
+      "પ્રકરણ ૪: નરસિંહ મહેતા અને ભક્તિ આંદોલન"
+    ]
+  },
+  {
+    "id": "bk-4",
+    "titleGu": "આધુનિક ગુજરાતના ઘડવૈયાઓ",
+    "titleEn": "Book 4: Makers of Modern Gujarat",
+    "author": "ઐતિહાસિક જીવનચરિત્ર શ્રેણી",
+    "summary": "Inspiring biographies of Gandhi, Sardar Patel, Vikram Sarabhai, and industrial pioneers.",
+    "chaptersCount": 25,
+    "isSampleFree": false,
+    "tableOfContents": [
+      "પ્રકરણ ૧: કવિ દલપતરામ અને સુધારક યુગ",
+      "પ્રકરણ ૨: મહાત્મા ગાંધી: સત્ય અને અહિંસાના પ્રયોગો",
+      "પ્રકરણ ૩: સરદાર વલ્લભભાઈ પટેલ: અખંડ ભારતના શિલ્પી",
+      "પ્રકરણ ૪: ડૉ. વિક્રમ સારાભાઈ: ભારતીય અંતરિક્ષ યુગના જનક"
+    ]
+  },
+  {
+    "id": "bk-5",
+    "titleGu": "ભાષાની વિકાસયાત્રા (ભાગ ૧)",
+    "titleEn": "Book 5: Journey of Language Pt 1 - Prakrit to Apabhramsha",
+    "author": "ભાષાશાસ્ત્ર અને વ્યાકરણ સંશોધન",
+    "summary": "The evolution from Sanskrit and Sauraseni Prakrit to Gurjar Apabhramsha and Hemachandracharya grammar.",
+    "chaptersCount": 12,
+    "isSampleFree": false,
+    "tableOfContents": [
+      "પ્રકરણ ૧: પ્રાકૃત અને ગૌર્જર અપભ્રંશનું પ્રાગટ્ય",
+      "પ્રકરણ ૨: આચાર્ય હેમચંદ્રસૂરિ અને સિદ્ધહેમ શબ્દાનુશાસન",
+      "પ્રકરણ ૩: જૂની ગુજરાતીનું સ્વરૂપ અને કાનહડદે પ્રબંધ"
+    ]
+  },
+  {
+    "id": "bk-6",
+    "titleGu": "ભાષાની વિકાસયાત્રા (ભાગ ૨)",
+    "titleEn": "Book 6: Journey of Language Pt 2 - Modern Dialects",
+    "author": "પ્રાદેશિક બોલી અભ્યાસ મંડળ",
+    "summary": "Linguistic study of Kathiyawadi, Surati, Charotari, Kutchi, and standard Gujarati idioms.",
+    "chaptersCount": 14,
+    "isSampleFree": false,
+    "tableOfContents": [
+      "પ્રકરણ ૧: બાર ગાઉએ બોલી બદલાય: કાઠિયાવાડી અને સુરતી રંગ",
+      "પ્રકરણ ૨: ચરોતરી અને કચ્છી બોલીઓનું સૌંદર્ય",
+      "પ્રકરણ ૩: અર્વાચીન વ્યાકરણ અને માન્ય ભાષા"
+    ]
+  },
+  {
+    "id": "bk-7",
+    "titleGu": "ગુજરાતની જીવનશૈલી અને કલાવારસો",
+    "titleEn": "Book 7: Gujarat Ni Asmita Lifestyle & Heritage Arts",
+    "author": "સંસ્કૃતિ સંશોધન વિભાગ",
+    "summary": "Ayurvedic nutrition, Patan Patola, Stepwell engineering, Navratri Garba, and folk architecture.",
+    "chaptersCount": 16,
+    "isSampleFree": false,
+    "tableOfContents": [
+      "પ્રકરણ ૧: ષડરસ ભોજન: ગુજરાતી થાળીનું આયુર્વેદિક વિજ્ઞાન",
+      "પ્રકરણ ૨: પાટણના પટોળા અને બાંધણીની કલા",
+      "પ્રકરણ ૩: વાવ સ્થાપત્ય અને જળ વ્યવસ્થાપન",
+      "પ્રકરણ ૪: નવરાત્રી અને ગરબાની વૈશ્વિક ધરોહર"
+    ]
+  }
+]

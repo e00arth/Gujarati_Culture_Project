@@ -4,17 +4,107 @@ import '../data/cultural_repository.dart';
 import '../models/cultural_models.dart';
 import '../services/paywall_store.dart';
 
-class LifestyleScreen extends StatelessWidget {
+class LifestyleScreen extends StatefulWidget {
   const LifestyleScreen({super.key, required this.paywall});
 
   final PaywallStore paywall;
+
+  @override
+  State<LifestyleScreen> createState() => _LifestyleScreenState();
+}
+
+class _LifestyleScreenState extends State<LifestyleScreen> {
+  String _selectedCategory = 'બધા';
+
+  void _showDetailedTopic(BuildContext context, LifestyleTopic topic) {
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) => DraggableScrollableSheet(
+        initialChildSize: 0.75,
+        maxChildSize: 0.95,
+        minChildSize: 0.4,
+        expand: false,
+        builder: (context, scrollController) => Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          child: ListView(
+            controller: scrollController,
+            children: [
+              Center(
+                child: Container(
+                  width: 40,
+                  height: 4,
+                  margin: const EdgeInsets.only(bottom: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.grey.shade400,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFFCE4EC),
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    child: Text(topic.category, style: const TextStyle(fontSize: 11, color: Color(0xFFAD1457), fontWeight: FontWeight.bold)),
+                  ),
+                  Text(topic.readTime, style: const TextStyle(fontSize: 12, color: Colors.grey)),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Text(topic.title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+              Text(topic.subtitle, style: const TextStyle(fontSize: 13, fontStyle: FontStyle.italic, color: Colors.grey)),
+              const Divider(height: 24),
+              Text(topic.content, style: const TextStyle(fontSize: 15, height: 1.5)),
+              const SizedBox(height: 16),
+              const Text('મુખ્ય વિશિષ્ટતાઓ (Key Highlights):', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+              const SizedBox(height: 6),
+              for (final point in topic.bulletPoints) ...[
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 3),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text('• ', style: TextStyle(color: Color(0xFFAD1457), fontWeight: FontWeight.bold, fontSize: 16)),
+                      Expanded(child: Text(point, style: const TextStyle(fontSize: 13, height: 1.3))),
+                    ],
+                  ),
+                ),
+              ],
+              if (topic.detailedSection.isNotEmpty) ...[
+                const SizedBox(height: 16),
+                const Text('વિગતવાર સાંસ્કૃતિક વિશ્લેષણ (Cultural Analysis):', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                const SizedBox(height: 6),
+                SelectableText(
+                  topic.detailedSection,
+                  style: const TextStyle(fontSize: 14, height: 1.5, fontFamily: 'serif'),
+                ),
+              ],
+              const SizedBox(height: 24),
+              FilledButton.tonal(
+                onPressed: () => Navigator.of(context).pop(),
+                child: const Text('Close Guide'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
   void _showIapConsole(BuildContext context) {
     showDialog<void>(
       context: context,
       builder: (context) {
         return ListenableBuilder(
-          listenable: paywall,
+          listenable: widget.paywall,
           builder: (context, _) {
             return AlertDialog(
               title: const Text('In-App Purchase Testing Console', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
@@ -36,12 +126,12 @@ class LifestyleScreen extends StatelessWidget {
                               const Text('FREE', style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold, fontSize: 12))
                             else
                               Switch(
-                                value: paywall.isUnlocked(module),
+                                value: widget.paywall.isUnlocked(module),
                                 onChanged: (val) {
                                   if (val) {
-                                    paywall.unlock(module);
+                                    widget.paywall.unlock(module);
                                   } else {
-                                    paywall.lock(module);
+                                    widget.paywall.lock(module);
                                   }
                                 },
                               ),
@@ -55,12 +145,12 @@ class LifestyleScreen extends StatelessWidget {
                       children: [
                         const Text('All-Access Pass:', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
                         Switch(
-                          value: paywall.isAllAccess,
+                          value: widget.paywall.isAllAccess,
                           onChanged: (val) {
                             if (val) {
-                              paywall.unlockAllAccess();
+                              widget.paywall.unlockAllAccess();
                             } else {
-                              paywall.resetAll();
+                              widget.paywall.resetAll();
                             }
                           },
                         ),
@@ -70,7 +160,7 @@ class LifestyleScreen extends StatelessWidget {
                     Center(
                       child: TextButton(
                         onPressed: () {
-                          paywall.resetAll();
+                          widget.paywall.resetAll();
                         },
                         child: const Text('Reset All to Default (Locked)', style: TextStyle(color: Colors.red, fontSize: 12)),
                       ),
@@ -93,6 +183,12 @@ class LifestyleScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final categories = ['બધા', 'આહાર અને આયુર્વેદ', 'કલા અને વસ્ત્રપરંપરા', 'સ્થાપત્ય', 'તહેવારો', 'વારસો'];
+
+    final filteredTopics = _selectedCategory == 'બધા'
+        ? CulturalRepository.lifestyleTopics
+        : CulturalRepository.lifestyleTopics.where((t) => t.category.contains(_selectedCategory)).toList();
+
     return Scaffold(
       body: ListView(
         padding: const EdgeInsets.all(16),
@@ -110,7 +206,7 @@ class LifestyleScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text('અસ્મિતા જીવનશૈલી અને સંસ્કૃતિ', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Color(0xFF880E4F))),
-                        Text('Dietary Science, Textiles & Architecture', style: TextStyle(fontSize: 13, color: Color(0xFFAD1457))),
+                        Text('Dietary Science, Textiles & Architecture', style: TextStyle(fontSize: 12, color: Color(0xFFAD1457))),
                       ],
                     ),
                   ),
@@ -123,8 +219,27 @@ class LifestyleScreen extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 16),
-          for (final topic in CulturalRepository.lifestyleTopics) ...[
+          const SizedBox(height: 12),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                for (final cat in categories)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: FilterChip(
+                      label: Text(cat),
+                      selected: _selectedCategory == cat,
+                      onSelected: (selected) {
+                        if (selected) setState(() => _selectedCategory = cat);
+                      },
+                    ),
+                  ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
+          for (final topic in filteredTopics) ...[
             Card(
               margin: const EdgeInsets.only(bottom: 12),
               child: Padding(
@@ -132,25 +247,47 @@ class LifestyleScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(topic.category, style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold, fontSize: 12)),
-                    const SizedBox(height: 4),
-                    Text(topic.title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFFCE4EC),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Text(topic.category, style: const TextStyle(fontSize: 11, color: Color(0xFF880E4F), fontWeight: FontWeight.bold)),
+                        ),
+                        Text(topic.readTime, style: const TextStyle(fontSize: 11, color: Colors.grey)),
+                      ],
+                    ),
+                    const SizedBox(height: 6),
+                    Text(topic.title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                     Text(topic.subtitle, style: const TextStyle(fontStyle: FontStyle.italic, color: Colors.grey, fontSize: 12)),
                     const SizedBox(height: 8),
-                    Text(topic.content, style: const TextStyle(fontSize: 14, height: 1.4)),
+                    Text(topic.content, style: const TextStyle(fontSize: 13, height: 1.4)),
                     const SizedBox(height: 10),
-                    for (final point in topic.bulletPoints) ...[
+                    for (final point in topic.bulletPoints.take(2)) ...[
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 2),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text('• ', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
-                            Expanded(child: Text(point, style: const TextStyle(fontSize: 13))),
+                            Expanded(child: Text(point, style: const TextStyle(fontSize: 12))),
                           ],
                         ),
                       ),
                     ],
+                    const SizedBox(height: 8),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: TextButton.icon(
+                        icon: const Icon(Icons.arrow_forward, size: 16),
+                        label: const Text('Read In-Depth Guide'),
+                        onPressed: () => _showDetailedTopic(context, topic),
+                      ),
+                    ),
                   ],
                 ),
               ),

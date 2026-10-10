@@ -1,0 +1,102 @@
+[
+  {
+    "id": "sp-somnath",
+    "name": "Somnath Temple (પ્રભાસ પાટણ)",
+    "location": "Prabhas Patan, Gir Somnath",
+    "category": "જ્યોતિર્લિંગ (Jyotirlinga)",
+    "coordinates": {"latitude": 20.8880, "longitude": 70.4012},
+    "duration": "Audio Tour: 18 mins",
+    "significance": "The First of the Twelve Holy Jyotirlingas of Lord Shiva. Symbol of Civilizational Resilience and Eternal Faith.",
+    "history": "The Somnath temple has withstood numerous invasions and reconstructions throughout history. Reconstructed in 1951 through the vision of Sardar Vallabhbhai Patel and K.M. Munshi, it stands as the 'Eternal Shrine' that rose from ashes again and again.",
+    "keyFacts": [
+      "Baan-Stambh (Arrow Pillar): Direct sea route to the South Pole with zero land obstruction.",
+      "Triveni Sangam: Sacred confluence of Hiran, Kapila, and Saraswati rivers.",
+      "Bhalka Tirth: The sacred spot nearby where Lord Krishna concluded his earthly Lila.",
+      "Chalukyan Architecture: Built in magnificent Māru-Gurjara sandstone sculpture."
+    ],
+    "isSampleFree": true
+  },
+  {
+    "id": "sp-dwarka",
+    "name": "Dwarkadhish Temple (જગત મંદિર)",
+    "location": "Dwarka, Devbhumi Dwarka",
+    "category": "ચાર ધામ (Char Dham)",
+    "coordinates": {"latitude": 22.2376, "longitude": 68.9678},
+    "duration": "Audio Tour: 22 mins",
+    "significance": "The Capital of Lord Krishna. One of the sacred Char Dham and Sapta Puri pilgrimage destinations.",
+    "history": "Dwarka ('Door to Liberation') was the prosperous kingdom of Lord Krishna. The 5-storied temple supported by 72 carved pillars towers majestically over the Arabian Sea, originally established by Krishna’s great-grandson Vajranabh.",
+    "keyFacts": [
+      "Submerged Ancient City explored off the coast by marine archaeologists.",
+      "Dhvajaji Ceremony: Holy 52-yard flag changed 5 times daily in grand ceremony.",
+      "98th Divya Desam glorified by ancient Vaishnava Alvars.",
+      "Gomti Ghat: Sacred bathing steps where the Gomti river meets the sea."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-palitana",
+    "name": "Palitana Shatrunjaya Tirth (પાલીતાણા)",
+    "location": "Shatrunjaya Hill, Bhavnagar",
+    "category": "જૈન મહાતીર્થ (Jain Tirth)",
+    "coordinates": {"latitude": 21.5034, "longitude": 71.8214},
+    "duration": "Audio Tour: 24 mins",
+    "significance": "The Supreme Jain Pilgrimage site featuring 863 exquisite marble temples atop sacred Shatrunjaya hill.",
+    "history": "Shatrunjaya is sanctified by 23 of the 24 Tirthankaras. Lord Adinath (Rishabhanatha), the first Tirthankara, meditated here countless times. It represents the pinnacle of ancient marble carving and spiritual austerity.",
+    "keyFacts": [
+      "Over 3,500 carved stone steps leading to the divine temple complex.",
+      "Strict sanctity: Nobody, including priests, is permitted to stay atop the hill overnight.",
+      "Adinath Chaumukha Temple: Masterpiece of intricate stone lattices and celestial carvings.",
+      "World's only mountain sanctum completely vegetarian in its surrounding sanctuary."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-girnar",
+    "name": "Girnar Maha Tirth (જૂનાગઢ)",
+    "location": "Junagadh",
+    "category": "પવિત્ર પર્વત (Sacred Peak)",
+    "coordinates": {"latitude": 21.5286, "longitude": 70.5289},
+    "duration": "Audio Tour: 25 mins",
+    "significance": "Ancient sacred mountain revered in Jainism (Lord Neminath) and Hinduism (Guru Dattatreya). 9,999 steps.",
+    "history": "Geologically older than the Himalayas, Mount Girnar has been a sanctuary for ascetics and seekers for millennia. Ashoka's rock edicts from 250 BCE sit at its base, celebrating non-violence and moral conduct.",
+    "keyFacts": [
+      "Lord Neminath, the 22nd Jain Tirthankara, attained Moksha and Renunciation here.",
+      "Guru Dattatreya padukas situated on the highest peak (Gorakhnath Shikhar).",
+      "Bhavnath Fair held annually during Mahashivratri with Naga sadhus.",
+      "Asia's longest ropeway carries pilgrims across Girnar's rocky crags."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-ambaji",
+    "name": "Ambaji Gabbar Shaktipeeth (અંબાજી)",
+    "location": "Danta, Banaskantha",
+    "category": "શક્તિપીઠ (Shaktipeeth)",
+    "coordinates": {"latitude": 24.3333, "longitude": 72.8500},
+    "duration": "Audio Tour: 16 mins",
+    "significance": "One of the foremost 51 Shaktipeethas where the Heart of Goddess Sati is believed to have fallen.",
+    "history": "Ambaji is unique among major shrines because there is no idol of the deity; worship is offered to the sacred gold-inscribed 'Viso Yantra'. Pilgrims trek from across India during the Bhadarvi Poonam fair.",
+    "keyFacts": [
+      "Gabbar Hill: The original ancient seat of the Goddess atop 999 stone steps.",
+      "Chachar Chowk: Vibrant courtyard where devotees sing Garba songs through the night.",
+      "Akhand Jyot: The eternal sacred flame has burned continuously for centuries."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-modhera",
+    "name": "Modhera Sun Temple (મોઢેરા સૂર્ય મંદિર)",
+    "location": "Mehsana District",
+    "category": "સ્થાપત્ય વારસો (UNESCO Heritage)",
+    "coordinates": {"latitude": 23.5836, "longitude": 72.1331},
+    "duration": "Audio Tour: 20 mins",
+    "significance": "A 1026 CE architectural marvel built by King Bhima I of the Solanki dynasty dedicated to the Sun God.",
+    "history": "Designed so that on the solar equinoxes, the first rays of the rising sun illuminated the diamond on the crown of Surya inside the sanctum sanctorum.",
+    "keyFacts": [
+      "Surya Kund: Deep rectangular stepped water tank with 108 miniature shrines.",
+      "Sabha Mandap: Supported by 52 ornately carved pillars representing 52 weeks of the year.",
+      "Annual Modhera Dance Festival showcases classical Indian dance under night illumination."
+    ],
+    "isSampleFree": false
+  }
+]

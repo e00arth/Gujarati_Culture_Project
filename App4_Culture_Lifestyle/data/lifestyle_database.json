@@ -1,0 +1,84 @@
+[
+  {
+    "id": "ls-thali",
+    "category": "આહાર અને આયુર્વેદ",
+    "title": "The Gujarati Thali: Ayurvedic Alchemy",
+    "subtitle": "The science behind Shad Rasa (6 tastes) and balanced digestion",
+    "readTime": "4 min read",
+    "summary": "A traditional Gujarati Thali is crafted according to ancient Ayurvedic principles, incorporating sweet, salty, sour, pungent, bitter, and astringent notes in every meal to harmonize the tri-doshas.",
+    "bulletPoints": [
+      "Jaggery and raw sugar balance high salinity in western coastal soil and aid enzymatic carbohydrate breakdown.",
+      "Farsan (Dhokla, Khandvi) evolved from merchant caravans requiring shelf-stable, protein-rich steamed nutrition.",
+      "Chaas (Spiced Buttermilk with roasted cumin and asafoetida) cools the digestive fire and supplies live probiotics.",
+      "Ghee-topped Rotla (Bajra millet flatbread) provides slow-burning energy in arid desert and farm conditions."
+    ]
+  },
+  {
+    "id": "ls-textiles",
+    "category": "કલા અને વસ્ત્રપરંપરા",
+    "title": "Patan Patola & Bandhani: Geometric Precision",
+    "subtitle": "Double ikat silk weaving taking up to a year per master saree",
+    "readTime": "5 min read",
+    "summary": "Patan Patola represents the pinnacle of double ikat silk weaving where both warp and weft threads are individually tie-dyed with microscopic mathematical accuracy before weaving.",
+    "bulletPoints": [
+      "Pure natural vegetable dyes extracted from pomegranate rinds, madder, turmeric, marigold, and indigo.",
+      "Identical geometric pattern on both front and reverse sides with no right or wrong side.",
+      "Preserved by the Salvi artisan family of Patan for over 900 years under King Kumarapala's patronage.",
+      "Protected globally under the prestigious Geographical Indication (GI) heritage tag."
+    ]
+  },
+  {
+    "id": "ls-vav",
+    "category": "સ્થાપત્ય",
+    "title": "Stepwells (Vavs) of Gujarat: Subterranean Palaces",
+    "subtitle": "Rani ki Vav (UNESCO World Heritage) & Adalaj Vav engineering",
+    "readTime": "6 min read",
+    "summary": "In arid semi-desert climates, stepwells (Vavs) were monumental civil engineering feats combining rain harvesting with sacred sanctuaries and shaded rest stops for trade caravans.",
+    "bulletPoints": [
+      "Rani ki Vav in Patan features over 500 principal sculptures dedicated to Lord Vishnu's Dashavatara.",
+      "Seven multi-storey pavilions designed with intricately carved Māru-Gurjara pillars and passive wind cooling.",
+      "Micro-climate inside the deep stepwell remains 5 to 6 degrees cooler than external summer heatwaves.",
+      "Adalaj Vav near Ahmedabad was built in 1498 by Queen Rudabai, blending Hindu floral iconography with Solanki engineering."
+    ]
+  },
+  {
+    "id": "ls-garba",
+    "category": "તહેવારો",
+    "title": "Navratri & Garba: World's Longest Dance Festival",
+    "subtitle": "UNESCO Intangible Cultural Heritage of Humanity & Sacred Geometry",
+    "readTime": "5 min read",
+    "summary": "Navratri in Gujarat is recognized by UNESCO as an Intangible Cultural Heritage. The sacred Garba circle dance revolves counter-clockwise around an earthen lamp symbolizing the universe around the divine flame.",
+    "bulletPoints": [
+      "The word 'Garba' derives from Sanskrit 'Garbha' (womb), representing creation and the cyclical nature of time.",
+      "Dandia Raas celebrates Lord Krishna's joyful dance with the Gopis in ancient Dwarka and Vrindavan.",
+      "Millions dance synchronously for nine consecutive nights under the autumn moon.",
+      "Traditional Chaniya Choli hand-embroidered with mirror work reflects festive light and keeps dancers agile."
+    ]
+  },
+  {
+    "id": "ls-haveli",
+    "category": "સ્થાપત્ય",
+    "title": "Pol Houses & Wooden Havelis of Ahmedabad",
+    "subtitle": "UNESCO World Heritage City: Community Living and Secret Escape Routes",
+    "readTime": "4 min read",
+    "summary": "The historic walled city of Ahmedabad features densely clustered residential neighborhoods known as 'Pols' with timber framing, courtyards, and underground rainwater storage.",
+    "bulletPoints": [
+      "Otla (raised front veranda) designed to encourage neighborly conversation and watch over children.",
+      "Chabutras (tall artistic wooden bird feeders) built at the center of every pol to care for pigeons and parrots.",
+      "Interlocking wooden joinery withstood major earthquakes including the 2001 Bhuj earthquake."
+    ]
+  },
+  {
+    "id": "ls-lothal",
+    "category": "વારસો",
+    "title": "Maritime Heritage & Lothal Dockyard",
+    "subtitle": "World's Oldest Tidal Basin of the Indus Valley Civilization (2400 BCE)",
+    "readTime": "5 min read",
+    "summary": "Lothal on the Gulf of Khambhat possessed a sophisticated brick-lined tidal dockyard connecting Gujarat to ancient Mesopotamia, Egypt, and Bahrain.",
+    "bulletPoints": [
+      "Engineered with lock gates to maintain water levels during low tide for ship loading.",
+      "Bead making factories produced carnelian beads discovered in royal Sumerian tombs of Ur.",
+      "Ancient seals and weights show standard merchant regulatory systems dating back 4,500 years."
+    ]
+  }
+]

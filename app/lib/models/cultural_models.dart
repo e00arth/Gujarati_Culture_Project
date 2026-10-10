@@ -25,6 +25,7 @@ class FolkloreTrack {
     required this.duration,
     required this.description,
     required this.lyricsOrText,
+    this.artist = 'પરંપરાગત લોકગીત',
     this.isSampleFree = false,
   });
 
@@ -34,6 +35,7 @@ class FolkloreTrack {
   final String duration;
   final String description;
   final String lyricsOrText;
+  final String artist;
   final bool isSampleFree;
 }
 
@@ -46,6 +48,7 @@ class SpiritualSite {
     required this.significance,
     required this.history,
     required this.keyFacts,
+    this.category = 'તીર્થ',
     this.isSampleFree = false,
   });
 
@@ -56,7 +59,20 @@ class SpiritualSite {
   final String significance;
   final String history;
   final List<String> keyFacts;
+  final String category;
   final bool isSampleFree;
+}
+
+class BookChapter {
+  const BookChapter({
+    required this.number,
+    required this.title,
+    required this.content,
+  });
+
+  final int number;
+  final String title;
+  final String content;
 }
 
 class EBook {
@@ -66,8 +82,7 @@ class EBook {
     required this.titleEn,
     required this.author,
     required this.summary,
-    required this.sampleChapterTitle,
-    required this.sampleChapterContent,
+    required this.chapters,
     required this.chaptersCount,
     this.isSampleFree = false,
   });
@@ -77,10 +92,12 @@ class EBook {
   final String titleEn;
   final String author;
   final String summary;
-  final String sampleChapterTitle;
-  final String sampleChapterContent;
+  final List<BookChapter> chapters;
   final int chaptersCount;
   final bool isSampleFree;
+
+  String get sampleChapterTitle => chapters.isNotEmpty ? chapters.first.title : '';
+  String get sampleChapterContent => chapters.isNotEmpty ? chapters.first.content : '';
 }
 
 class LifestyleTopic {
@@ -91,6 +108,8 @@ class LifestyleTopic {
     required this.subtitle,
     required this.content,
     required this.bulletPoints,
+    this.readTime = '4 min read',
+    this.detailedSection = '',
   });
 
   final String id;
@@ -99,4 +118,6 @@ class LifestyleTopic {
   final String subtitle;
   final String content;
   final List<String> bulletPoints;
+  final String readTime;
+  final String detailedSection;
 }
