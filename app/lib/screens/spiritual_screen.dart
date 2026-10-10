@@ -126,7 +126,7 @@ class _SpiritualScreenState extends State<SpiritualScreen> {
     final theme = Theme.of(context);
     final isUnlocked = widget.paywall.isUnlocked(CulturalModule.spiritual);
 
-    final categories = ['બધા', 'જ્યોતિર્લિંગ', 'ચાર ધામ', 'જૈન મહાતીર્થ', 'પવિત્ર પર્વત', 'શક્તિપીઠ', 'સ્થાપત્ય વારસો'];
+    final categories = ['બધા', 'જ્યોતિર્લિંગ', 'ચાર ધામ', 'કૃષ્ણ ધામ', 'જૈન મહાતીર્થ', 'પવિત્ર પર્વત', 'શક્તિપીઠ', 'પ્રાચીન તીર્થ', 'સ્થાપત્ય વારસો', 'ઐતિહાસિક વારસો'];
 
     final filteredSites = _selectedCategory == 'બધા'
         ? CulturalRepository.spiritualSites

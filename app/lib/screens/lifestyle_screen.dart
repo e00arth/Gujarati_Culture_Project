@@ -183,7 +183,7 @@ class _LifestyleScreenState extends State<LifestyleScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final categories = ['બધા', 'આહાર અને આયુર્વેદ', 'કલા અને વસ્ત્રપરંપરા', 'સ્થાપત્ય', 'તહેવારો', 'વારસો'];
+    final categories = ['બધા', 'આહાર અને વાનગી', 'આહાર અને આયુર્વેદ', 'કલા અને વસ્ત્રપરંપરા', 'કલા અને હસ્તશિલ્પ', 'સ્થાપત્ય', 'તહેવારો અને ઉત્સવો', 'પુરાતત્વ', 'વારસો', 'લોકનાટ્ય', 'ગ્રામ્ય જીવન'];
 
     final filteredTopics = _selectedCategory == 'બધા'
         ? CulturalRepository.lifestyleTopics

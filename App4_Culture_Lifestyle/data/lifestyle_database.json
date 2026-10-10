@@ -7,11 +7,12 @@
     "readTime": "4 min read",
     "summary": "A traditional Gujarati Thali is crafted according to ancient Ayurvedic principles, incorporating sweet, salty, sour, pungent, bitter, and astringent notes in every meal to harmonize the tri-doshas.",
     "bulletPoints": [
-      "Jaggery and raw sugar balance high salinity in western coastal soil and aid enzymatic carbohydrate breakdown.",
+      "Jaggery and raw sugar balance high salinity in western soil and aid enzymatic carbohydrate breakdown.",
       "Farsan (Dhokla, Khandvi) evolved from merchant caravans requiring shelf-stable, protein-rich steamed nutrition.",
-      "Chaas (Spiced Buttermilk with roasted cumin and asafoetida) cools the digestive fire and supplies live probiotics.",
+      "Chaas (Spiced Buttermilk with roasted cumin and asafoetida) cools the digestive fire and supplies live gut-friendly probiotics.",
       "Ghee-topped Rotla (Bajra millet flatbread) provides slow-burning energy in arid desert and farm conditions."
-    ]
+    ],
+    "detailedSection": "આયુર્વેદ અનુસાર ભોજનમાં છ રસો હોવા અનિવાર્ય છે. ગુજરાતી થાળીમાં:\n• મધુર (ગોળ, દાળ, મિષ્ટાન) - પિત્તશામક અને તાકાત આપનાર\n• અમ્લ/ખાટો (લીંબુ, છાશ, ટામેટાં) - પાચક અગ્નિ પ્રદીપ્ત કરનાર\n• લવણ/ખારો (મીઠું) - જળ સંતુલન જાળવનાર\n• કટુ/તીખો (મરચું, આદુ) - કફનાશક\n• તિક્ત/કડવો (મેથીના મુઠિયાં, કારેલાં) - લોહી શુદ્ધ કરનાર\n• કષાય/તૂરો (હળદર, કઠોળ) - વ્રણ રોપક અને મેદ ઘટાડનાર."
   },
   {
     "id": "ls-textiles",
@@ -25,7 +26,8 @@
       "Identical geometric pattern on both front and reverse sides with no right or wrong side.",
       "Preserved by the Salvi artisan family of Patan for over 900 years under King Kumarapala's patronage.",
       "Protected globally under the prestigious Geographical Indication (GI) heritage tag."
-    ]
+    ],
+    "detailedSection": "પાટોળા વણવાની કળામાં વણાટ કરતાં પહેલાં દોરાઓ પર ડિઝાઇન દોરીને બાંધણી બાંધવામાં આવે છે.\nકાપડના એક એક તારે ગણિત અને કલાનો અદ્ભુત સંગમ જોવા મળે છે.\nસાથે કચ્છની બાંધણી અને અજરખ પ્રિન્ટિંગ પણ કુદરતી રંગો અને બ્લોક પ્રિન્ટિંગની પ્રાચીન ધરોહર સાચવીને બેઠાં છે."
   },
   {
     "id": "ls-vav",
@@ -33,27 +35,29 @@
     "title": "Stepwells (Vavs) of Gujarat: Subterranean Palaces",
     "subtitle": "Rani ki Vav (UNESCO World Heritage) & Adalaj Vav engineering",
     "readTime": "6 min read",
-    "summary": "In arid semi-desert climates, stepwells (Vavs) were monumental civil engineering feats combining rain harvesting with sacred sanctuaries and shaded rest stops for trade caravans.",
+    "summary": "In arid semi-desert climates, stepwells (Vavs) were monumental civil engineering feats combining rain harvesting with sacred sanctuaries, shaded rest stops for trade caravans, and breathtaking subterranean temples of stone.",
     "bulletPoints": [
       "Rani ki Vav in Patan features over 500 principal sculptures dedicated to Lord Vishnu's Dashavatara.",
       "Seven multi-storey pavilions designed with intricately carved Māru-Gurjara pillars and passive wind cooling.",
       "Micro-climate inside the deep stepwell remains 5 to 6 degrees cooler than external summer heatwaves.",
       "Adalaj Vav near Ahmedabad was built in 1498 by Queen Rudabai, blending Hindu floral iconography with Solanki engineering."
-    ]
+    ],
+    "detailedSection": "ગુજરાતમાં પાણીની અછત સામે લડવા આપણા પૂર્વજોએ જમીનની અંદર મહેલો રચ્યા.\nરાણીની વાવને યુનેસ્કો દ્વારા ૨૦૧૪માં વિશ્વ ધરોહર જાહેર કરવામાં આવી.\nતેની સ્થાપત્ય શૈલી ઊંધી ઊભેલી મંદિર જેવી છે, જે માનવને પાણીના એક એક ટીપાંનું દૈવી મહત્વ સમજાવે છે."
   },
   {
     "id": "ls-garba",
-    "category": "તહેવારો",
+    "category": "તહેવારો અને ઉત્સવો",
     "title": "Navratri & Garba: World's Longest Dance Festival",
     "subtitle": "UNESCO Intangible Cultural Heritage of Humanity & Sacred Geometry",
     "readTime": "5 min read",
-    "summary": "Navratri in Gujarat is recognized by UNESCO as an Intangible Cultural Heritage. The sacred Garba circle dance revolves counter-clockwise around an earthen lamp symbolizing the universe around the divine flame.",
+    "summary": "Navratri in Gujarat is recognized by UNESCO as an Intangible Cultural Heritage. The sacred Garba circle dance revolves counter-clockwise around an earthen lamp inside a perforated clay pot.",
     "bulletPoints": [
-      "The word 'Garba' derives from Sanskrit 'Garbha' (womb), representing creation and the cyclical nature of time.",
+      "The word \"Garba\" derives from Sanskrit \"Garbha\" (womb), representing creation and the circle of life.",
       "Dandia Raas celebrates Lord Krishna's joyful dance with the Gopis in ancient Dwarka and Vrindavan.",
-      "Millions dance synchronously for nine consecutive nights under the autumn moon.",
+      "Millions dance synchronously for nine consecutive nights under the autumn moon across villages and urban grounds.",
       "Traditional Chaniya Choli hand-embroidered with mirror work reflects festive light and keeps dancers agile."
-    ]
+    ],
+    "detailedSection": "ગરબા એ માત્ર નૃત્ય નથી, પણ મા આરાસુરી અંબાની ભક્તિનું પ્રતીક છે.\nગોળ કુંડાળામાં ઘૂમતા ભક્તો એ વાતનું સ્મરણ કરે છે કે સંસાર ચક્ર ગમે તેટલું ફરે, ઈશ્વર રૂપી કેન્દ્ર અચલ અને સ્થિર છે."
   },
   {
     "id": "ls-haveli",
@@ -61,12 +65,13 @@
     "title": "Pol Houses & Wooden Havelis of Ahmedabad",
     "subtitle": "UNESCO World Heritage City: Community Living and Secret Escape Routes",
     "readTime": "4 min read",
-    "summary": "The historic walled city of Ahmedabad features densely clustered residential neighborhoods known as 'Pols' with timber framing, courtyards, and underground rainwater storage.",
+    "summary": "The historic walled city of Ahmedabad features densely clustered residential neighborhoods known as Pols with self-supporting timber framing and internal courtyards.",
     "bulletPoints": [
       "Otla (raised front veranda) designed to encourage neighborly conversation and watch over children.",
       "Chabutras (tall artistic wooden bird feeders) built at the center of every pol to care for pigeons and parrots.",
       "Interlocking wooden joinery withstood major earthquakes including the 2001 Bhuj earthquake."
-    ]
+    ],
+    "detailedSection": "અમદાવાદના પોળ મકાનો સમુદાય જીવન અને સલામતીનો ઉત્તમ નમૂનો છે.\nલાકડાની કોતરણીવાળા ઝરૂખા અને પક્ષીઓ માટેના ચબૂતરા એ ગુજરાતી જીવનની કરુણા અને કલાપ્રિયતાની સાક્ષી પૂરે છે."
   },
   {
     "id": "ls-lothal",
@@ -74,11 +79,102 @@
     "title": "Maritime Heritage & Lothal Dockyard",
     "subtitle": "World's Oldest Tidal Basin of the Indus Valley Civilization (2400 BCE)",
     "readTime": "5 min read",
-    "summary": "Lothal on the Gulf of Khambhat possessed a sophisticated brick-lined tidal dockyard connecting Gujarat to ancient Mesopotamia, Egypt, and Bahrain.",
+    "summary": "Long before modern maritime ports, Lothal on the Gulf of Khambhat possessed a sophisticated brick-lined tidal dockyard connecting Gujarat to ancient Mesopotamia, Egypt, and Bahrain.",
     "bulletPoints": [
       "Engineered with lock gates to maintain water levels during low tide for ship loading.",
       "Bead making factories produced carnelian beads discovered in royal Sumerian tombs of Ur.",
       "Ancient seals and weights show standard merchant regulatory systems dating back 4,500 years."
-    ]
+    ],
+    "detailedSection": "ગુજરાતનો દરિયાઈ વેપાર હજારો વર્ષો જૂનો છે.\nલોથલની ગોદી વિશ્વની પ્રથમ ભરતી-ઓટ આધારિત ઈજનેરી અજાયબી હતી, જેણે ગુજરાતીઓને વિશ્વભરમાં સાહસિક વેપારી તરીકે સ્થાપિત કર્યા."
+  },
+  {
+    "id": "ls-farsan",
+    "category": "આહાર અને વાનગી",
+    "title": "Fafda, Jalebi & Khaman: Heritage of Gujarati Farsan",
+    "subtitle": "The Sunday morning ritual and steamed chickpea-flour chemistry",
+    "readTime": "5 min read",
+    "summary": "In Gujarat, savory snacks (Farsan) are an enduring cultural ritual ranging from golden crisped chickpea-flour Fafda with raw papaya sambharo to airy steamed nylon Khaman.",
+    "bulletPoints": [
+      "Steamed Khaman and Dhokla utilize natural lactobacillus fermentation for optimal protein bioavailability and digestibility.",
+      "Besan (Gram flour) and Hing (Asafoetida) create quick-energy savory foods that resist tropical spoilage.",
+      "Dussehra tradition: Consuming over thousands of tons of Fafda-Jalebi statewide commemorating Lord Rama's victory.",
+      "Surati Locho: An accidental culinary innovation that became one of Gujarat's most celebrated breakfast delicacies."
+    ],
+    "detailedSection": "ગુજરાતમાં સવારની શરૂઆત ગરમાગરમ ફાફડા અને જલેબી સાથે કરવાની પરંપરા અનોખી છે.\nદશેરાના દિવસે કરોડો રૂપિયાના ફાફડા-જલેબીનું વેચાણ થાય છે.\nતેની સાથે પીરસાતી પપૈયાની છીણ અને તળેલાં લીલાં મરચાંનો સંભારો પાચનમાં મદદરૂપ થાય છે.\nસુરતનો લોચો, વડોદરાનો લીલો ચેવડો અને ખમણ-ઢોકળાં એ ગુજરાતી જીભના સ્વાદપ્રિય સ્વભાવની ઓળખ છે."
+  },
+  {
+    "id": "ls-kutch-craft",
+    "category": "કલા અને હસ્તશિલ્પ",
+    "title": "Kutchi Lippan Kaam & Rogan Art: Mud & Castor Oil Magic",
+    "subtitle": "Subterranean mud-mirror murals & the last masters of Rogan painting in Nirona",
+    "readTime": "6 min read",
+    "summary": "The harsh white desert of Kutch inspired two of humanity's most unique decorative art forms: Lippan Kaam mud-mirror murals and Rogan Art drawn with castor oil jelly and stylus.",
+    "bulletPoints": [
+      "Lippan Kaam provides passive thermal insulation keeping round thatched Bhunga huts cool in blistering 48°C desert summers.",
+      "Tiny convex mirrors capture and multiply precious oil lamp illumination inside rural homes.",
+      "Rogan Art is preserved by a single Khatri artisan family in Nirona village, handed down through eight generations.",
+      "Naturally resilient: Castor oil residue permanently bonds with fabric without fading over centuries."
+    ],
+    "detailedSection": "કચ્છના બન્ની વિસ્તારના કારીગરો માટી અને છાણને ગૂંદીને દીવાલ પર જે સુંદર લિપ્પન ભાત ઉપસાવે છે તે અદ્ભુત છે.\nતેમાં જડેલા આભલા જ્યારે દીવાના અજવાળે ચમકે છે ત્યારે રણમાં તારાઓ ખીલ્યા હોય તેવો ભાસ થાય છે.\nબીજી બાજુ રોગન કળામાં દિવેલને બે દિવસ ઉકાળીને જે ઘટ્ટ રંગ બને છે તેને હાથની હથેળી પર રાખી ધાતુની સળીથી કાપડ પર વણાય છે, જે વિશ્વમાં માત્ર કચ્છમાં જ જોવા મળે છે."
+  },
+  {
+    "id": "ls-festivals",
+    "category": "તહેવારો અને ઉત્સવો",
+    "title": "Uttarayan & Kite Culture: The Sky Festival of Gujarat",
+    "subtitle": "Makara Sankranti solar transition, rooftop brotherhood, and sesame-jaggery feasts",
+    "readTime": "5 min read",
+    "summary": "Every January 14, rooftops across Gujarat roar with Kai Po Che! as millions celebrate Uttarayan marking the sun northward celestial journey.",
+    "bulletPoints": [
+      "Community bonding: Families and neighbors spend 48 continuous hours on rooftops cooking Undhiyu, Jalebi, and Chikki.",
+      "Traditional kite craft: Micro-thin balance paper glued to hand-bent bamboo reeds (Dhadho-Kanni).",
+      "Manja making: Cotton thread treated with boiled rice flour and fine pulverized glass for tensile aerial slicing.",
+      "Night Tukkals: Paper hot-air lanterns launched at twilight creating floating constellations of lights."
+    ],
+    "detailedSection": "ઉત્તરાયણ એ ગુજરાતીઓના હૈયાનો ઉત્સવ છે.\nસૂર્ય જ્યારે મકર રાશિમાં પ્રવેશ કરે ત્યારે આકાશ રંગબેરંગી પતંગોથી છવાઈ જાય છે.\nધાબા પર ઊંધિયું, જલેબી, તલસાંકળી અને બોર ખાવાનો આનંદ અજોડ હોય છે.\nરાત્રે આકાશમાં છોડવામાં આવતા તુક્કલ અને ફટાકડા સમગ્ર વાતાવરણને દિવાળી જેવું ઝગમગાવે છે."
+  },
+  {
+    "id": "ls-dholavira",
+    "category": "પુરાતત્વ અને નગર આયોજન",
+    "title": "Dholavira: UNESCO Harappan Metropolis & Water Harvesting",
+    "subtitle": "5,000-year-old geometric city and advanced stormwater reservoir engineering",
+    "readTime": "6 min read",
+    "summary": "Situated on Khadir Bet in the Great Rann of Kutch, Dholavira is a UNESCO World Heritage site showcasing 16 interconnected stone reservoirs and advanced urban planning.",
+    "bulletPoints": [
+      "Monumental water engineering: 16 interconnected stone-cut reservoirs holding 250,000 cubic meters of potable water.",
+      "Tripartite city layout: Citadel (ruler residence), Middle Town (nobles/merchants), and Lower Town (artisans) built with dressed stone.",
+      "World's earliest billboard: The famous 10-character Indus script signpost discovered near the North Gate.",
+      "Highly organized waste management with stone-covered street conduits and silt-filtering settling chambers."
+    ],
+    "detailedSection": "ધોળાવીરા એ પ્રાચીન ભારતના ઈજનેરોની મહાન સિદ્ધિ છે.\nરણની વચ્ચે વરસાદનું એક પણ ટીપું વેડફાય નહીં તે માટે નદીના વહેણને વાળીને વિશાળ પથ્ખરના ટાંકાઓમાં પાણી ભરવાની અદભુત વ્યવસ્થા કરવામાં આવી હતી.\nઆ નગર રચના દર્શાવે છે કે ૫,૦૦૦ વર્ષ પહેલાં પણ ગુજરાતમાં વૈજ્ઞાનિક અભિગમ અને સુશાસનનું અસ્તિત્વ હતું."
+  },
+  {
+    "id": "ls-bhavai",
+    "category": "લોકનાટ્ય અને મનોરંજન",
+    "title": "Bhavai: Gujarat's Ancient Folk Theatre & Ranglo-Rangli",
+    "subtitle": "14th-century social satire founded by Asait Thakar performed around the sacred Chachar Chowk",
+    "readTime": "5 min read",
+    "summary": "Bhavai is the traditional vibrant folk theatre form of rural Gujarat featuring Asait Thakar plays, Ranglo-Rangli satire, and the resonance of the Bhungal horn.",
+    "bulletPoints": [
+      "Founded in the 14th century by Asait Thakar, who authored 360 Veshas (plays) to challenge caste and gender prejudices.",
+      "Ranglo and Rangli: Irreverent comedic narrators who satirize current social follies and interact directly with audiences.",
+      "Performed throughout the night illuminated originally by earthen torches (Mashals) soaked in mustard oil.",
+      "Acrobatic balancing feats: Performers dance balancing up to seven brass pots (Kalas) on their heads atop brass plates or swords."
+    ],
+    "detailedSection": "ભવાઈ એ માત્ર મનોરંજન નથી પણ સામાજિક જાગૃતિનું સબળ માધ્યમ હતું.\nઅસાઈત ઠાકરે રચેલા વેશોમાં 'જસમા ઓડણ' અને 'રામદેવપીરનો વેશ' ખૂબ પ્રસિદ્ધ છે.\nભૂંગળના તીણા સૂર રાતના શાંત વાતાવરણમાં માઈલો દૂર સુધી સંભળાતા અને ગામના લોકોને ચાચરના ચોકમાં એકઠા કરતા.\nરંગલો સમાજના દંભી આગેવાનોની હાસ્ય દ્વારા પોલ ખોલતો."
+  },
+  {
+    "id": "ls-hospitality",
+    "category": "ગ્રામ્ય જીવન અને પરંપરા",
+    "title": "Kathiyawadi Hospitality: \"Avo Bapa Avo\" & Bajra No Rotlo",
+    "subtitle": "The sacred code of guest reverence (Atithi Devo Bhava) and hearth warmth",
+    "readTime": "4 min read",
+    "summary": "In Saurashtra and Kathiyawad, hospitality is a sacred vow of life where strangers are welcomed with fresh milk, hot Bajra Rotla, Ringna No Olo, and hand-churned Makhan.",
+    "bulletPoints": [
+      "The golden rule of Saurashtra: A stranger never leaves a village home without sharing a meal and a brass bowl of buttermilk.",
+      "Clay Tavdi cooking: Thick Bajra millet dough slapped by hand without rolling pins, baked on wood-fired earthenware.",
+      "Ringna No Olo (Smoky roasted eggplant with garlic, green chillies, and mustard oil) eaten alongside jaggery and white butter.",
+      "Folk lore abounds with tales of ordinary villagers offering their last grain to guests in distress during severe droughts."
+    ],
+    "detailedSection": "કાઠિયાવાડમાં મહેમાન એ સાક્ષાત ઈશ્વરનું રૂપ ગણાય છે.\n\"જેના આંગણે કાગડો બોલે ને હૈયામાં હેત ઊભરાય\" એ કાઠિયાવાડી સંસ્કાર છે.\nલાકડાના ચૂલા પર તાવડીમાં શેકાતો બાજરાનો ગરમાગરમ રોટલો, દેશી ગોળ, ઘીની ધાર અને કાંસાના વાટકામાં છાશ... આ માત્ર ભોજન નથી પણ અંતરનો સ્નેહ છે."
   }
 ]

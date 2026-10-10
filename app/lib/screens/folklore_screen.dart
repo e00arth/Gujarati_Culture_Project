@@ -75,7 +75,7 @@ class _FolkloreScreenState extends State<FolkloreScreen> {
     final theme = Theme.of(context);
     final isUnlocked = widget.paywall.isUnlocked(CulturalModule.folklore);
 
-    final categories = ['બધા', 'હાલરડું', 'લોકગીત', 'દુહા-છંદ & વીરગાથા', 'લોકવાર્તા', 'ભજન'];
+    final categories = ['બધા', 'હાલરડું', 'લોકગીત', 'દુહા-છંદ & વીરગાથા', 'લોકવાર્તા', 'ભજન', 'રાસ', 'દાયરો'];
 
     final filteredTracks = _selectedCategory == 'બધા'
         ? CulturalRepository.folkloreTracks

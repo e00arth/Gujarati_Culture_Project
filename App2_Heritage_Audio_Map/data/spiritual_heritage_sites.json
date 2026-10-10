@@ -4,10 +4,13 @@
     "name": "Somnath Temple (પ્રભાસ પાટણ)",
     "location": "Prabhas Patan, Gir Somnath",
     "category": "જ્યોતિર્લિંગ (Jyotirlinga)",
-    "coordinates": {"latitude": 20.8880, "longitude": 70.4012},
+    "coordinates": {
+      "latitude": 20.888,
+      "longitude": 70.4012
+    },
     "duration": "Audio Tour: 18 mins",
     "significance": "The First of the Twelve Holy Jyotirlingas of Lord Shiva. Symbol of Civilizational Resilience and Eternal Faith.",
-    "history": "The Somnath temple has withstood numerous invasions and reconstructions throughout history. Reconstructed in 1951 through the vision of Sardar Vallabhbhai Patel and K.M. Munshi, it stands as the 'Eternal Shrine' that rose from ashes again and again.",
+    "history": "The Somnath temple has withstood numerous invasions and reconstructions throughout history. Reconstructed in 1951 through the vision of Sardar Vallabhbhai Patel and K.M. Munshi, it stands as the \"Eternal Shrine\" that rose from ashes again and again.",
     "keyFacts": [
       "Baan-Stambh (Arrow Pillar): Direct sea route to the South Pole with zero land obstruction.",
       "Triveni Sangam: Sacred confluence of Hiran, Kapila, and Saraswati rivers.",
@@ -21,10 +24,13 @@
     "name": "Dwarkadhish Temple (જગત મંદિર)",
     "location": "Dwarka, Devbhumi Dwarka",
     "category": "ચાર ધામ (Char Dham)",
-    "coordinates": {"latitude": 22.2376, "longitude": 68.9678},
+    "coordinates": {
+      "latitude": 22.2376,
+      "longitude": 68.9678
+    },
     "duration": "Audio Tour: 22 mins",
     "significance": "The Capital of Lord Krishna. One of the sacred Char Dham and Sapta Puri pilgrimage destinations.",
-    "history": "Dwarka ('Door to Liberation') was the prosperous kingdom of Lord Krishna. The 5-storied temple supported by 72 carved pillars towers majestically over the Arabian Sea, originally established by Krishna’s great-grandson Vajranabh.",
+    "history": "Dwarka (\"Door to Liberation\") was the prosperous kingdom of Lord Krishna. The 5-storied temple supported by 72 carved pillars towers majestically over the Arabian Sea, originally established by Krishna’s great-grandson Vajranabh.",
     "keyFacts": [
       "Submerged Ancient City explored off the coast by marine archaeologists.",
       "Dhvajaji Ceremony: Holy 52-yard flag changed 5 times daily in grand ceremony.",
@@ -38,7 +44,10 @@
     "name": "Palitana Shatrunjaya Tirth (પાલીતાણા)",
     "location": "Shatrunjaya Hill, Bhavnagar",
     "category": "જૈન મહાતીર્થ (Jain Tirth)",
-    "coordinates": {"latitude": 21.5034, "longitude": 71.8214},
+    "coordinates": {
+      "latitude": 21.5284,
+      "longitude": 71.8315
+    },
     "duration": "Audio Tour: 24 mins",
     "significance": "The Supreme Jain Pilgrimage site featuring 863 exquisite marble temples atop sacred Shatrunjaya hill.",
     "history": "Shatrunjaya is sanctified by 23 of the 24 Tirthankaras. Lord Adinath (Rishabhanatha), the first Tirthankara, meditated here countless times. It represents the pinnacle of ancient marble carving and spiritual austerity.",
@@ -55,7 +64,10 @@
     "name": "Girnar Maha Tirth (જૂનાગઢ)",
     "location": "Junagadh",
     "category": "પવિત્ર પર્વત (Sacred Peak)",
-    "coordinates": {"latitude": 21.5286, "longitude": 70.5289},
+    "coordinates": {
+      "latitude": 21.5273,
+      "longitude": 70.5332
+    },
     "duration": "Audio Tour: 25 mins",
     "significance": "Ancient sacred mountain revered in Jainism (Lord Neminath) and Hinduism (Guru Dattatreya). 9,999 steps.",
     "history": "Geologically older than the Himalayas, Mount Girnar has been a sanctuary for ascetics and seekers for millennia. Ashoka's rock edicts from 250 BCE sit at its base, celebrating non-violence and moral conduct.",
@@ -72,10 +84,13 @@
     "name": "Ambaji Gabbar Shaktipeeth (અંબાજી)",
     "location": "Danta, Banaskantha",
     "category": "શક્તિપીઠ (Shaktipeeth)",
-    "coordinates": {"latitude": 24.3333, "longitude": 72.8500},
+    "coordinates": {
+      "latitude": 24.3314,
+      "longitude": 72.8488
+    },
     "duration": "Audio Tour: 16 mins",
     "significance": "One of the foremost 51 Shaktipeethas where the Heart of Goddess Sati is believed to have fallen.",
-    "history": "Ambaji is unique among major shrines because there is no idol of the deity; worship is offered to the sacred gold-inscribed 'Viso Yantra'. Pilgrims trek from across India during the Bhadarvi Poonam fair.",
+    "history": "Ambaji is unique among major shrines because there is no idol of the deity; worship is offered to the sacred gold-inscribed \"Viso Yantra\". Pilgrims trek from across India during the Bhadarvi Poonam fair.",
     "keyFacts": [
       "Gabbar Hill: The original ancient seat of the Goddess atop 999 stone steps.",
       "Chachar Chowk: Vibrant courtyard where devotees sing Garba songs through the night.",
@@ -88,7 +103,10 @@
     "name": "Modhera Sun Temple (મોઢેરા સૂર્ય મંદિર)",
     "location": "Mehsana District",
     "category": "સ્થાપત્ય વારસો (UNESCO Heritage)",
-    "coordinates": {"latitude": 23.5836, "longitude": 72.1331},
+    "coordinates": {
+      "latitude": 23.5835,
+      "longitude": 72.133
+    },
     "duration": "Audio Tour: 20 mins",
     "significance": "A 1026 CE architectural marvel built by King Bhima I of the Solanki dynasty dedicated to the Sun God.",
     "history": "Designed so that on the solar equinoxes, the first rays of the rising sun illuminated the diamond on the crown of Surya inside the sanctum sanctorum.",
@@ -96,6 +114,126 @@
       "Surya Kund: Deep rectangular stepped water tank with 108 miniature shrines.",
       "Sabha Mandap: Supported by 52 ornately carved pillars representing 52 weeks of the year.",
       "Annual Modhera Dance Festival showcases classical Indian dance under night illumination."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-dakor",
+    "name": "Dakor Ranchhodraiji Temple (ડાકોર રણછોડરાયજી)",
+    "location": "Dakor, Kheda District",
+    "category": "કૃષ્ણ ધામ (Krishna Dham)",
+    "coordinates": {
+      "latitude": 22.7567,
+      "longitude": 73.1492
+    },
+    "duration": "Audio Tour: 18 mins",
+    "significance": "Sacred home of Lord Ranchhodraiji, brought from Dwarka by the unconditional devotion of Bhakta Bodana.",
+    "history": "In the 12th century, the elderly devotee Bodana walked every year to Dwarka carrying a holy Basil (Tulsi) plant. Pleased with his steadfast devotion, Lord Krishna journeyed in Bodana's bullock cart to reside permanently beside Dakor's Gomti Lake.",
+    "keyFacts": [
+      "Gomti Lake: Holy lake where Krishna's cart rested, where pilgrims perform holy ablutions.",
+      "Tulabhar Miracle: Krishna was miraculously weighed against a single golden nose-ring of Bodana's pious wife Gangabai.",
+      "Fagan Sud Poonam: Over one million pilgrims walk barefoot (Pad-yatra) to Dakor annually.",
+      "Famous Dakor Gota and Makhan-Mishri offered daily as Mahabhog."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-pavagadh",
+    "name": "Pavagadh Kalika Mata & Champaner (પાવાગઢ)",
+    "location": "Halol, Panchmahal District",
+    "category": "શક્તિપીઠ (Shaktipeeth & UNESCO)",
+    "coordinates": {
+      "latitude": 22.4632,
+      "longitude": 73.5332
+    },
+    "duration": "Audio Tour: 22 mins",
+    "significance": "Prominent Shaktipeeth perched atop an 800m volcanic cliff overlooking UNESCO World Heritage city Champaner.",
+    "history": "Believed to be where Goddess Sati's right toe fell. The hill fortress features ancient fortifications of King Jayasimha and Sultan Mahmud Begada, representing a seamless confluence of Rajput and Indo-Islamic architecture.",
+    "keyFacts": [
+      "In 2022, the 500-year-old temple spire (Shikhar) was fully restored and the sacred Red Dhwaja unfurled.",
+      "Udan Khatola (Ropeway) ferries pilgrims directly across precipitous volcanic gorges.",
+      "Champaner-Pavagadh Archaeological Park is Gujarat's first UNESCO World Heritage site.",
+      "Jami Masjid at the foothill features 172 stone pillars and exquisite stone filigree screens."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-becharaji",
+    "name": "Bahucharaji Temple (બહુચરાજી માતાજી)",
+    "location": "Becharaji, Mehsana District",
+    "category": "શક્તિપીઠ (Shaktipeeth)",
+    "coordinates": {
+      "latitude": 23.4984,
+      "longitude": 72.0392
+    },
+    "duration": "Audio Tour: 16 mins",
+    "significance": "Revered Shaktipeeth of Bala Tripura Sundari, celebrated for curing speech impediments and granting blessings.",
+    "history": "Sankhalpur was the original ancient shrine where Goddess Bahuchara manifested riding a sacred rooster (Kukkut). 18th-century poet Vallabh Bhatt composed the immortal \"Anand No Garbo\" here, establishing the bedrock of Gujarati Garba tradition.",
+    "keyFacts": [
+      "Varadheeshwar Kukkuta: The rooster is the sacred vahana and symbol of the goddess.",
+      "\"Anand No Garbo\": 118-stanza devotional hymn sung across Gujarat during Navratri.",
+      "Babari Ceremony: Thousands of families bring children for their first haircut blessing here.",
+      "Surrounded by three sacred temple courtyards: Adhyasthan, Madhyasthan, and Vrishasthan."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-shamlaji",
+    "name": "Shamlaji Gadadhar Temple (શામળાજી વિષ્ણુ મંદિર)",
+    "location": "Aravalli District",
+    "category": "પ્રાચીન તીર્થ (Ancient Vaishnava Tirth)",
+    "coordinates": {
+      "latitude": 23.6842,
+      "longitude": 73.3854
+    },
+    "duration": "Audio Tour: 17 mins",
+    "significance": "11th-century white sandstone temple of Lord Gadadhar (Vishnu) situated gracefully on the banks of sacred Meshwo River.",
+    "history": "Located along the ancient caravan route between Gujarat and Rajasthan. The temple exterior is embellished with two friezes of narrative sculptures depicting the Ramayana, Mahabharata, and Solanki court life.",
+    "keyFacts": [
+      "Devnimori Buddhist Stupa discovered nearby with 3rd-century CE relics of Lord Buddha.",
+      "Annual Kartik Poonam Tribal Fair attracts lakhs of pilgrims and folk musicians from Aravalli hills.",
+      "Gadadhar Idol: Carved in polished black schist stone holding the divine Mace, Conch, Lotus, and Discus.",
+      "Deep-stepped stone ghats on Meshwo River where pilgrims take cleansing dips."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-akshardham",
+    "name": "Akshardham Gandhinagar (અક્ષરધામ ગાંધીનગર)",
+    "location": "Gandhinagar Capital Complex",
+    "category": "સ્થાપત્ય વારસો (Cultural Wonder)",
+    "coordinates": {
+      "latitude": 23.2293,
+      "longitude": 72.6738
+    },
+    "duration": "Audio Tour: 25 mins",
+    "significance": "Monumental 108-foot pink sandstone temple dedicated to Bhagwan Swaminarayan, celebrating universal Indian values.",
+    "history": "Consecrated in 1992 by Pramukh Swami Maharaj, the complex was hand-carved by 4,000 artisans using 6,000 metric tons of Bansipaharpur pink sandstone without any structural steel reinforcement.",
+    "keyFacts": [
+      "Sahajanand Van: 15-acre serene landscaped garden dedicated to reflection, herbal groves, and peace.",
+      "Sat-Chit-Anand Water Show: Spectacular water, laser, and fire spectacle depicting the Nachiketa Katha.",
+      "Three thematic exhibition halls featuring animatronics on Indian spirituality and non-violence.",
+      "Supported by 97 intricately carved pillars and 17 high-domed ceilings."
+    ],
+    "isSampleFree": false
+  },
+  {
+    "id": "sp-udvada",
+    "name": "Udvada Atash Behram (ઉદવાડા આતશ બહેરામ)",
+    "location": "Udvada, Valsad District",
+    "category": "ઐતિહાસિક વારસો (Zoroastrian Heritage)",
+    "coordinates": {
+      "latitude": 20.4856,
+      "longitude": 72.9213
+    },
+    "duration": "Audio Tour: 15 mins",
+    "significance": "The oldest continuously burning Zoroastrian sacred fire (Iranshah) in the world, burning uninterrupted for over 1,290 years.",
+    "history": "When Parsis arrived in Sanjan, Gujarat in the 8th century seeking religious sanctuary, King Jadi Rana welcomed them with the famous bowl of milk and sugar parable. The sacred fire was later safely consecrated in Udvada in 1742 CE.",
+    "keyFacts": [
+      "Iranshah Fire: Sustained uninterruptedly with pure sandalwood and fragrant wood since 721 CE.",
+      "Udvada Heritage Town preserves colonial and vernacular timber-framed Parsi houses with wide verandas.",
+      "Living testament to Gujarat's ancient legacy of religious hospitality, shelter, and cultural synthesis.",
+      "Pilgrimage center for Zoroastrians from across the globe."
     ],
     "isSampleFree": false
   }
